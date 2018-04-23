@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:utsuge"
+             x:Class="utsuge.MainPage"
+             BackgroundColor="Black">
+    <StackLayout Spacing="5" x:Name="layout">
+        <BoxView HorizontalOptions="FillAndExpand" HeightRequest="50"
+          VerticalOptions="Start" Color="BLACK" />
+        <Label Text="∴さて・・・・　どこへ行こうか？" FontSize="Large" Font="ＭＳ 明朝" TextColor="White" HorizontalOptions="Center"/>
+        <BoxView HorizontalOptions="FillAndExpand" HeightRequest="50"
+          VerticalOptions="Start" Color="BLACK" />
+        
+        <!-- 場所移動 -->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button FontSize="14" Text="屋上" TextColor="Black" Font="ＭＳ 明朝" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="60" BackgroundColor="White" Clicked="place1"/>
+            <Button FontSize="14" Text="便所" TextColor="Black" Font="ＭＳ 明朝" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="60" BackgroundColor="White" Clicked="place2"/>
+            <Button FontSize="14" Text="校庭" TextColor="Black" Font="ＭＳ 明朝" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="60" BackgroundColor="White" Clicked="place3"/>
+            <Button FontSize="14" Text="教室" TextColor="Black" Font="ＭＳ 明朝" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="60" BackgroundColor="White" Clicked="place4"/>
+        </StackLayout>
+
+        <!-- 状態 -->
+        <StackLayout Spacing="5" x:Name="slayout">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label FontSize="14" Text="巣鴨睦月" TextColor="White" Font="ＭＳ 明朝" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="130" />
+                <ProgressBar HeightRequest="10" WidthRequest="100" HorizontalOptions="FillAndExpand" BackgroundColor="White" Progress="0.0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label FontSize="14" Text="高田望美" TextColor="White" Font="ＭＳ 明朝" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="130" />
+                <ProgressBar HeightRequest="10" WidthRequest="100" HorizontalOptions="FillAndExpand" BackgroundColor="White" Progress="0.0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label FontSize="14" Text="田町まひる" TextColor="White" Font="ＭＳ 明朝" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="130" />
+                <ProgressBar HeightRequest="10" WidthRequest="100" HorizontalOptions="FillAndExpand" BackgroundColor="White" Progress="0.0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label FontSize="14" Text="目黒御幸" TextColor="White" Font="ＭＳ 明朝" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="130" />
+                <ProgressBar HeightRequest="10" WidthRequest="100" HorizontalOptions="FillAndExpand" BackgroundColor="White" Progress="0.0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label FontSize="14" Text="上野こより" TextColor="White" Font="ＭＳ 明朝" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="130" />
+                <ProgressBar HeightRequest="10" WidthRequest="100" HorizontalOptions="FillAndExpand" BackgroundColor="White" Progress="0.0"/>
+            </StackLayout>
+        </StackLayout>
+
+        <!-- メッセージ -->
+        <Label x:Name="msgLabel" FontSize="14" Text="" TextColor="White" Font="ＭＳ 明朝" HorizontalOptions="Center" VerticalOptions="Center" />
+
+    </StackLayout>
+
+</ContentPage>
